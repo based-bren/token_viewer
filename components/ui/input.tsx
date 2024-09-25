@@ -3,10 +3,7 @@ import { InputHTMLAttributes } from 'react'
 
 import { cn } from "@/lib/utils"
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
-
-const Input = React.forwardRef<HTMLInputElement, InputProps>(
+const Input = React.forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>>(
   ({ className, type, ...props }, ref) => {
     return (
       <input
