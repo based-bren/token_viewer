@@ -62,7 +62,7 @@ export function SynthwaveNftViewer() {
       if (metadata.image) {
         const svgimg = atob(metadata.image.replace(/data:image\/svg\+xml;base64,/, ''));
         setSvgContent(svgimg);
-        setStatus('PEPE displayed successfully!');
+        setStatus('Pepe displayed successfully!');
       } else {
         setStatus('No image data found in the metadata.');
       }
