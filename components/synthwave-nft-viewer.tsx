@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 
-const contractAddress = '0x1f7979C368c82dc647E075FfD61ed149052e3D6B';
+const contractAddress = '0x1f7979C368c82dc647E075fD61ed149052e3D6B';
 const rpcUrl = 'https://base.meowrpc.com';
 
 export function SynthwaveNftViewer() {
@@ -43,7 +43,6 @@ export function SynthwaveNftViewer() {
 
       setStatus('Decoding data...');
       const cleanedHex = result.result.slice(2);
-      const offset = parseInt(cleanedHex.slice(0, 64), 16);
       const length = parseInt(cleanedHex.slice(64, 128), 16);
       const dataHex = cleanedHex.slice(128, 128 + length * 2);
 
